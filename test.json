@@ -1,0 +1,32 @@
+{
+    "ConnectionState": false,
+    "ScreenState": true,
+    "ForegroundState": true,
+    "HeadsetPlugState": false,
+    "HeadsetBtState": false,
+    "ChargerPlugState": false,
+    "BatteryState": false,
+    "BatteryInfo": {
+        "IsCharging": true,
+        "UsbCharge": true,
+        "AcCharge": false,
+        "Blevel": 55,
+        "State": false
+    },
+    "WifiState": true,
+    "WifiInfo": {
+        "IsConnected": true,
+        "IsWiFi": true,
+        "SWifi": "PSS",
+        "NWifi": 99,
+        "VWifi": 72,
+        "Ip": "192.168.0.3",
+        "State": true
+    },
+    "LostPacketsState": false,
+    "MqttConnectionState": true,
+    "ListeningState": false,
+    "RecordingState": false,
+    "MutedState": false,
+    "RecordingLanguage": null
+}

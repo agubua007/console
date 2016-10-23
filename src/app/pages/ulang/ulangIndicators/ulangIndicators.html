@@ -1,0 +1,28 @@
+<div class="row pie-charts">
+  <div class="pie-chart-item-container" ng-repeat="chart in charts">
+    <div ba-panel>
+      <div class="pie-chart-item">
+        <div class="chart" rel="{{ ::chart.color }}" data-percent="60"> <span class="percent"></span> </div>
+        <div class="description">
+          <div>{{ ::chart.description }}</div>
+          <div class="description-stats">{{ ::chart.stats }}</div>
+        </div>
+        <i class="chart-icon i-{{ ::chart.icon }}"></i>
+      </div>
+    </div>
+  </div>
+  <div class="pie-chart-item-container" ng-repeat="indicator in indicators">
+    <div ba-panel>
+      <div class="pie-chart-item">
+        <div class="not chart" rel="{{ ::indicator.color }}" data-percent="0">
+          <i class="fa fa-microphone" style="font-size: 84px;color:{{ ::indicator.color }}" data-tp="iconogrande"></i>
+        </div>
+        <div class="description">
+          <div>{{ ::indicator.description }}</div>
+          <div class="description-stats">{{ ::indicator.stats }}</div>
+        </div>
+        <i class="chart-icon i-{{ ::indicator.icon }}"></i>
+      </div>
+    </div>
+  </div>
+</div>
