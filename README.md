@@ -1,3 +1,23 @@
+# Code for Console ulang V2
+
+### Installation
+- Install github [Link](https://github.com/blog/1510-installing-git-from-github-for-mac)
+- Install NodeJs [Link](https://nodejs.org/en/download/)
+
+### Commands
+- git clone https://github.com/agubua007/console.git
+- cd console
+- npm install
+- gulp serve //For Testing
+- gulp serve:dist // For Production
+
+
+
+
+
+
+This software is based on:
+
 # BlurAdmin Angular admin panel front-end framework
 
 Customizable admin panel framework made with :heart: by [Akveo team](http://akveo.com/). Follow us on [Twitter](https://twitter.com/akveo_inc) to get latest news about this template first!
