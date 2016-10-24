@@ -21,12 +21,14 @@ Alli encontraremos el cuerpo de la aplicacion "ulang.html" con su archivo de con
 - ulangTablets
 - ulangTodo
 
-Cada una de estas secciones contiene el codigo html "xxx.html", su controlador "xxxCtrl.js" y el arhivo de directivas "xxx.directive.js"
-Actualmente el codigo html y el css estan sobre el archivo html, esto no debe quedar asi sino que deben usarse las carpetas "console\src\sass"
-Cada controlador tiene el codigo javascript de la seccion, toda la lagica de la seccio debe estar en este archivo.
-:-------------------------:|:-------------------------:
-En la seccion de Tablets se encuentran los bocetos de la tablas para cuando se configura la consola y para cuando la disertacion se incio, solo una de estas tablas estara disponible en cada momento.
-La seccion Indicators debe mostrarse en todo momento y debe tener link a la porcion de la pantalla que corresponda. (Se hablo de posicionar esto en todo momento a la detecha de la pantalla y que se mueva el contenido en la porcion de la pantalla restante).
+### Items 1
+- Cada una de estas secciones contiene el codigo html "xxx.html", su controlador "xxxCtrl.js" y el arhivo de directivas "xxx.directive.js"
+- Actualmente el codigo html y el css estan sobre el archivo html, esto no debe quedar asi sino que deben usarse las carpetas "console\src\sass"
+- Cada controlador tiene el codigo javascript de la seccion, toda la lagica de la seccio debe estar en este archivo.
+
+### Items 2
+- En la seccion de Tablets se encuentran los bocetos de la tablas para cuando se configura la consola y para cuando la disertacion se incio, solo una de estas tablas estara disponible en cada momento.
+- La seccion Indicators debe mostrarse en todo momento y debe tener link a la porcion de la pantalla que corresponda. (Se hablo de posicionar esto en todo momento a la detecha de la pantalla y que se mueva el contenido en la porcion de la pantalla restante).
 
 
 
