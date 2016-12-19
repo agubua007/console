@@ -47,6 +47,7 @@
        
        .fila select {
            width: 200px;
+           border-radius: 20px !important;
        }
        
        .fila input[type="text"]{
