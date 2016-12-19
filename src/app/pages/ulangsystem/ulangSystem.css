@@ -49,6 +49,10 @@
            width: 200px;
            border-radius: 20px !important;
        }
+
+.fila select {
+    padding-left: 10px;
+}
        
        .fila input[type="text"]{
            width: 200px;
