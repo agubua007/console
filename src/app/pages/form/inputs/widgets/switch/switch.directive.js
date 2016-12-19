@@ -14,7 +14,8 @@
       restrict: 'EA',
       replace: true,
       scope: {
-        ngModel: '='
+        ngModel: '=',
+		ngClick: '='
       },
       template: function(el, attrs) {
         return '<div class="switch-container ' + (attrs.color || '') + '"><input type="checkbox" ng-model="ngModel"></div>';
@@ -28,6 +29,8 @@
           });
           input.on('switchChange.bootstrapSwitch', function(event, state) {
             scope.ngModel = state;
+			var att =  $(elem[0]).attr('ng-click');
+			scope.ngClick(state);
             scope.$apply();
           });
 

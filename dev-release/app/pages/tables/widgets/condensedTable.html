@@ -11,13 +11,15 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="item in peopleTableData">
-      <td class="table-id">{{item.id}}</td>
-      <td>{{item.firstName}}</td>
-      <td>{{item.lastName}}</td>
-      <td>{{item.username}}</td>
-      <td><a class="email-link" ng-href="mailto:{{item.email}}">{{item.email}}</a></td>
-      <td><button class="status-button btn btn-xs btn-{{item.status}}">{{item.status}}</button></td>
+    <tr  class="primary" ng-repeat="item in peopleTableData">
+		<td class="table-id">{{item.id}}</td>
+		<td>{{item.firstName}}</td>
+		<td>{{item.lastName}}</td>
+		<td>{{item.username}}</td>
+		<td><a class="email-link" ng-href="mailto:{{item.email}}">{{item.email}}</a></td>
+		<td>
+			<button class="status-button btn btn-xs btn-{{item.status}}">{{item.status}}</button>
+		</td>
     </tr>
     </tbody>
   </table>

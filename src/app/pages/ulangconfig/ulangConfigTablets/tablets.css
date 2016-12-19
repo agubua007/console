@@ -1,0 +1,262 @@
+
+	
+	.flag{
+		padding-left: 10px;
+	}
+	.indicator{
+		display:inline-block;
+	}
+	.btn-state{
+		padding: 3px 6px;
+	}
+	.invisible{
+		display: none;
+	}
+	.oculto{
+		visibility:hidden;
+	}
+	.blink_me {
+		/*transform: translateZ(0);*/
+		animation: blinker 1s linear infinite;
+	}
+
+	@keyframes blinker {  
+	50% { /*transform: translateZ(0);*/ opacity: 0; }
+	}
+
+    @keyframes blinker_bg {
+	    50% { 
+			/*transform: translateZ(0);*/
+            /*background-color: rgba(226, 27, 27, 0.1);
+            border-left: 6px solid red;*/
+        }
+	}
+
+    @keyframes blinker_outline {
+        0% {
+            outline: 1px solid rgba(226, 27, 27, 1);
+        }
+	    50% { 
+            outline: 3px solid rgba(226, 27, 27, 0.05);
+            outline-offset: 4px;
+        }
+        100% {
+            outline: 1px solid rgba(226, 27, 27, 1);
+        }
+	}
+
+	.iconTablets{
+		font-size: 20px;
+		margin-right: 5px;
+	}
+
+	.indicators > .indicator > i{
+		margin-left: 5px;
+	}
+
+	.table-panel{
+	    height:100%;
+	}
+
+.table-tablets {
+    border: 1px solid #333;
+}
+
+.table-tablets .tablet-disabled, .table-tablets .tablet-enabled {
+    
+}
+.par-1 {
+    border-top: 2px solid #333;
+}
+
+
+.columna-numero div {
+    float: left;
+}
+
+.num-tablet .tab-active{
+    color: #e2574c;
+}
+
+
+.columna-alarma {
+    text-align: center;
+}
+
+.switch {
+    float: left;
+}
+
+.btn-switch {
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid #a3a3a3;
+    color: #333;
+    margin-right: 10px;
+}
+
+.indicator .btn-info {
+    background: transparent !important;
+    border: 1px solid #a3a3a3 !important;
+    color: #0073ba
+}
+
+.indicator .btn-success {
+    background: transparent !important;
+    border: 1px solid #a3a3a3 !important;
+    color: #039b09
+}
+
+
+.btn-switch i {
+    color: #ef9832;
+}
+
+.mic-toggle {
+    border-radius: 50% !important;
+    width: 34px !important;
+    height: 34px !important;
+    background-color: #e2574c !important;
+    color: white;
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.toggle {
+    float: right;
+    margin-right: 10px;
+}
+
+.ganancia {
+    background-color: transparent;
+    margin: 1px;
+    float: right;
+    border-radius: 40px;
+    line-height: 30px;
+    padding-right: 10px;
+    padding-left: 2px;
+    border: 1px solid #2e6fb1;
+    border-style: groove;
+}
+
+.ganancia button {
+    background-color: transparent;
+    border: 1px solid #b5b5b5;
+}
+
+.ganancia img {
+    width: 28px;
+    line-height: 28px;
+    margin: 3px;
+    margin-right: 5px
+}
+
+.mic-mute {
+    background-color: transparent;
+    border: 1px solid #e2574c;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #e2574c;
+    font-size: 16px;
+    line-height: 30px
+}
+
+.mute {
+    float: right;
+    margin-right: 6px;
+}
+
+.indicators {
+    text-align: center; 
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+.tablet-disabled {
+    background-color: #efefef;
+}
+
+.tablet-disabled .columna-numero, .tablet-disabled .columna-language, .tablet-disabled .columna-actions {
+    opacity: 0.4
+}
+
+.tablet-disabled td img, .tablet-disabled td div button i{
+    color: #6f6f6f;
+}
+
+.tablet-disabled td div button {
+    background-color: transparent !important;
+    border: 1px solid #b9b9b9 !important;
+}
+
+
+
+
+
+
+.tablet-danger {
+	transform: translateZ(0);
+	/*-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-webkit-animation-fill-mode: forwards;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	backface-visibility: hidden;
+	perspective: 1000;
+    animation: blinker_bg 1s linear infinite;*/
+}
+
+
+.fa-exclamation-circle {
+	color:red;
+}
+.fa-exclamation-triangle {
+	color:goldenrod;
+}
+.fa-check-circle {
+	color:#3bb39d;
+}
+
+
+.btn-audio-on{
+	background-color:#e2574c!important;
+}
+.btn-audio-on > i{
+	color:white!important;
+}
+.btn-audio-off{
+	background-color:#ccc!important;
+	border: 1px solid #555;
+}
+.btn-audio-off > i{
+	color:#555!important;
+}
+
+.btn-listen-on{
+	background-color:#0073ba!important;
+}
+.btn-listen-on > i{
+	color:white!important;
+}
+.btn-listen-off{
+	background-color:white!important;
+	border: 1px solid #555;
+}
+.btn-listen-off > i{
+	color:#0073ba!important;
+}
+
+
+.modal-xlg {
+    width: 1200px;
+}
+
+
+
+
+
+
+
+
+

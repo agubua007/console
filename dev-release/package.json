@@ -1,0 +1,14 @@
+{
+  "name": "ulang",
+  "description": "live interpretation app",
+  "version": "0.1.0",
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "width": 1280,
+    "height": 600
+  },
+  "scripts": {
+    "start": "nw ."
+  }
+}

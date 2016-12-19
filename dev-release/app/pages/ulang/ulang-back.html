@@ -1,0 +1,87 @@
+
+  <div class="widgets">
+  <div class="row disertaciones-top ">
+      <div class="stop-all">
+         <button class="btn btn-stop-all">
+             <i class="fa fa-times-circle"></i>
+         </button>
+      </div>
+      <div class="disertaciones">
+         <button class="btn btn-disertacion-anterior" onclick="">
+                <a> <img class="img-avatar" src="assets/img/avatars/avatar1.jpg" /> Justin Seibert</a>
+                <i class="fa fa-angle-double-left "></i>
+          </button>
+          <button class="btn btn-disertacion-actual" onclick="mostrarVentana('modal-disertaciones')">
+                <a> <img class="img-avatar" src="assets/img/avatars/avatar1.jpg" /> Justin Seibert - </a>
+                <label id="inputName">
+                  Haga crecer su negocio en linea
+                </label>
+                   <br>
+                    <span class="desde">16:30hs</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                       
+                      </div>
+                    </div>
+                    <span class="hasta">17:30hs</span>
+                   
+          </button>
+          <button class="btn btn-disertacion-siguiente" onclick="">
+               <i class="fa fa-angle-double-right "></i>
+                <a> <img class="img-avatar" src="assets/img/avatars/avatar1.jpg" /> Justin Seibert</a>
+          </button>
+      </div>
+      <div class="coffee-break">
+         <button class="btn btn-coffee">
+             <img src="assets/img/icons/coffee.svg" class="logo-coffee" alt="">
+         </button>
+      </div>
+  </div>
+  <div class="row" style="height: 100%">
+    <div class="col-lg-10 col-md-10">
+        <ulang-tablets></ulang-tablets>
+    </div>
+    <div class="col-lg-2 col-md-2">
+	  <ulang-indicators></ulang-indicators>
+    </div>
+  </div>
+  <div class="overlay-modal" id="overlay-modal"></div>
+  <div id="modal-disertaciones">
+    <div class="modal-dialog">
+       <div class="modal-content">
+            <div class="modal-body"> 
+                <ulang-disertations></ulang-disertations>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" onclick="ocultarVentana('modal-disertaciones')" >Cancel</button>
+                <button type="button" class="btn btn-success" onclick="ocultarVentana('modal-disertaciones')">Ok</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <button class="btn" onclick="setIndicatorDanger('#listening')">set indicator</button>
+  <button class="btn" onclick="unsetIndicatorDanger('#listening')">unset indicator</button>
+  <!--
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+	  <ulang-disertations></ulang-disertations>
+    </div>
+  </div>
+  -->
+  
+  <div class="row">
+    
+  </div>
+  <div class="row shift-up">
+    <ulang-todo></ulang-todo>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <dashboard-line-chart2></dashboard-line-chart2>
+    </div>
+  </div>
+
+</div>
+
+

@@ -1,0 +1,346 @@
+
+ <!-- Modal idiomas ------------------------->
+ 
+  <div id="modal-idiomas">
+    <div class="modal-dialog">
+       <div class="modal-content">
+            <div class="modal-body"> 
+                <div><button class="btn btn-idioma-modal"><img src="/assets/img/flags/Spain.png" class="idioma" /> Español</button></div> 
+                <br>
+                <div><button class="btn btn-idioma-modal"><img src="/assets/img/flags/United-States.png" class="idioma" /> English</button></div>
+                <br>
+                <div><button class="btn btn-idioma-modal"><img src="/assets/img/flags/France.png" class="idioma" /> English</button></div>
+                <br>
+                <div><button class="btn btn-idioma-modal"><img src="/assets/img/flags/Italy.png" class="idioma" /> English</button></div>
+                <br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" onclick="ocultarVentana('modal-idiomas')" >Cancel</button>
+                <button type="button" class="btn btn-success" onclick="ocultarVentana('modal-idiomas')">Ok</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <!------------------------------------------>
+
+ <div class="widgets">
+  <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div ba-panel ba-panel-title="Tablets (Live)" ba-panel-class="with-scroll table-panel">
+            <table class="table table-tablets" id="tabla-de-tablets" >
+              <tr>
+                <th style="width: 16%; text-align: center">#</th>
+                <th style="width: 20%; text-align: left">Languages</th>
+                <th style="width: 40%">Switch / Preview <span style="float: right; margin-right: 40px">Mic Actions</span></th>
+                <th style="width: 20%; text-align: center">State</th>
+                <th style="width: 4%; text-align: center"></th>
+              </tr>
+              <tr class="par-1 tablet-enabled">
+                <td class="columna-numero">
+                    <div class="indicator num-tablet" id="pulsate-regular">
+                        <div class="indicator toggle">
+                            <button class="btn btn-xs  mic-toggle">
+                                <i class="fa fa-microphone" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        1-1
+                    </div>
+                </td>
+
+                <td class="columna-language" title="English speaking and listening in Spanish">
+                <div class="indicator">
+                    <i class="fa fa-headphones fa-2" aria-hidden="true" ></i>
+                    <button class="btn btn-xs btn-idioma" onclick="mostrarVentana('modal-idiomas')">
+                        <img src="/assets/img/flags/Spain.png" class="idioma" />
+                    </button>
+                </div>
+
+                <div class="indicator">
+                    <button class="btn btn-xs btn-idioma" onclick="mostrarVentana('modal-idiomas')">
+                    <img src="/assets/img/flags/United-States.png" class="idioma"/>
+                    </button>
+                    <i class="fa fa-microphone fa-2" aria-hidden="true"></i>
+                </div>
+                </td>
+
+                <td class="columna-actions">
+
+                    <div class="indicator switch">
+                        <button class="btn btn-xs btn-state btn-switch ">
+                            <i class="fa fa-random" aria-hidden="true"></i>
+                            Switch
+                        </button>
+                    </div>
+
+                    <div class="indicator">
+                        <button class="btn btn-xs btn-success btn-state">
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn-xs btn-info btn-state">
+                            <i class="fa fa-headphones" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn-xs btn-info btn-state">
+                            <i class="fa fa-music" aria-hidden="true"> Audio test</i>
+                        </button>
+                    </div>
+
+                    <div class="indicator ganancia" title="gain control">
+                            <img src="/assets/img/icons/mic-gain.svg" width="35px" alt="">
+                            <button class="btn btn-xs ">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+
+                            </button>
+                            5
+                            <button class="btn btn-xs ">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                    </div>
+                    
+                </td>
+                <td class="indicators columna-indicadores" >
+                    <div class="indicator" title="battery level (10%)">
+                        <img src="/assets/img/icons/battery-2.svg" width="20px"  alt="">
+                    </div>
+                    <div class="indicator" title="wifi level (98%)">
+                        <img src="/assets/img/icons/wifi.svg" width="20px"  alt="">
+                    </div>
+                    <div class="indicator oculto" title="square wave">
+                        <i class="fa fa-line-chart " aria-hidden="true"></i>
+                    </div>
+                    <div class="indicator oculto" title="loss packets">
+                        <img src="/assets/img/icons/box.svg" width="20px"  alt="">
+                    </div>
+                </td>
+                <td class="columna-alarma">
+                    <i class="fa fa-exclamation-circle iconTablets blink_me" style="color: red;" aria-hidden="true"></i>
+                </td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+    </div>
+    <center>
+        <button class="btn btn-agregar-tablet" onclick="agregarTablet()"><i class="fa fa-plus"></i></button>
+    </center>
+<!--
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <div ba-panel ba-panel-title="Tablets (Config)" ba-panel-class="with-scroll table-panel">
+		<table class="table" >
+		  <tr>
+			<th>#</th>
+			<th>State</th>
+			<th>Languages</th>
+			<th>Indicators</th>
+			<th>Actions</th>
+		  </tr>
+		  <tr class="">
+			<td>
+				<div class="indicator">
+					<i class="fa fa-tablet" aria-hidden="true"></i>
+					1-1
+				</div>
+			</td>
+			<td>
+				<i class="fa fa-check-circle iconTablets" aria-hidden="true"></i>
+			</td>
+			<td title="English speaking and listening in Spanish">
+			<div class="indicator">
+				<i class="fa fa-headphones fa-2" aria-hidden="true"></i>
+				<img src="/assets/img/flags/Spain.png"/>
+			</div>
+			<p> - </p>
+			<div class="indicator">
+				<i class="fa fa-microphone fa-2" aria-hidden="true"></i>
+				<img src="/assets/img/flags/United-States.png"/>
+			</div>
+			</td>
+			<td class="indicators">
+				<div class="indicator" title="battery level">
+					
+				</div>
+				<div class="indicator" title="wifi level">
+					<i class="fa fa-wifi" aria-hidden="true"></i>
+					
+				</div>
+				<div class="indicator" title="square wave">
+					<i class="fa fa-wheelchair oculto" aria-hidden="true"></i>
+				</div>
+				<div class="indicator" title="loss packets">
+					<i class="fa fa-wheelchair oculto" aria-hidden="true"></i>
+				</div>
+			</td>
+			<td>
+				<div class="indicator">
+					<button class="btn btn-xs  btn-state">
+						<i class="fa fa-refresh" aria-hidden="true"></i>
+						Switch
+					</button>
+				</div>
+				<div class="indicator">
+					<button class="btn btn-xs btn-success btn-state btn-circle">
+						<i class="fa fa-microphone-slash" aria-hidden="true"></i>
+						Mute
+					</button>
+				</div>
+				<div class="indicator">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-desktop" aria-hidden="true"></i>
+						Live
+					</button>
+				</div>
+				<div class="indicator">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-microphone" aria-hidden="true"></i>
+						Audio Test
+					</button>
+				</div>
+				<div class="indicator">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-times" aria-hidden="true"></i>
+						Desabilitar
+					</button>
+				</div>
+
+				<div class="indicator" title="gain control">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-minus" aria-hidden="true"></i>
+					</button>
+					8
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+					</button>
+				</div>
+
+				<div class="indicator" style="float: right !important;" title="Activar Tablet">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-microphone" aria-hidden="true"></i>
+					</button>
+				</div>
+
+			</td>
+		  </tr>
+		  <tr class="">
+			<td>
+				<div class="indicator">
+					<i class="fa fa-tablet" aria-hidden="true"></i>
+					1-2
+				</div>
+			</td>
+			<td>
+				<i class="fa fa-exclamation-triangle iconTablets blink_me" style="color: goldenrod;" aria-hidden="true"></i>
+			</td>
+			<td title="English speaking and listening in Spanish">
+			<div class="indicator">
+				<i class="fa fa-headphones fa-2" aria-hidden="true"></i>
+				<img src="/assets/img/flags/Spain.png"/>
+			</div>
+			<div class="indicator">
+				<i class="fa fa-microphone fa-2" aria-hidden="true"></i>
+				<img src="/assets/img/flags/United-States.png"/>
+			</div>
+			</td>
+			<td class="indicators">
+				<div class="indicator" title="battery level" style="color: goldenrod;">
+					<i class="fa fa-battery-empty fa-rotate-270 blink_me"  aria-hidden="true"></i>
+					64%
+				</div>
+				<div class="indicator" title="wifi level">
+					<i class="fa fa-wifi" aria-hidden="true"></i>
+					98%
+				</div>
+				<div class="indicator" title="square wave">
+					<i class="fa fa-wheelchair oculto" aria-hidden="true"></i>
+				</div>
+				<div class="indicator" title="loss packets">
+					<i class="fa fa-wheelchair oculto" aria-hidden="true"></i>
+				</div>
+			</td>
+			<td>
+				<div class="indicator">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-refresh" aria-hidden="true"></i>
+						Switch
+					</button>
+				</div>
+				<div class="indicator">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-microphone-slash" aria-hidden="true"></i>
+						Mute
+					</button>
+				</div>
+				<div class="indicator">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-desktop" aria-hidden="true"></i>
+						Live
+					</button>
+				</div>
+				<div class="indicator">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-microphone" aria-hidden="true"></i>
+						Audio Test
+					</button>
+				</div>
+				<div class="indicator">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-times" aria-hidden="true"></i>
+						Desabilitar
+					</button>
+				</div>
+
+				<div class="indicator" title="gain control">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-minus" aria-hidden="true"></i>
+					</button>
+					8
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+					</button>
+				</div>
+
+				<div class="indicator" style="float: right !important;" title="Activar Tablet">
+					<button class="btn btn-xs btn-success btn-state">
+						<i class="fa fa-microphone" aria-hidden="true"></i>
+					</button>
+				</div>
+			</td>
+		  </tr>
+		</table>
+		</div>
+    </div>
+  </div>
+  -->
+  
+  <script>
+    function mostrarIdiomas () {
+        alert("dssfdsf d fsd");
+    }
+    
+    </script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,12 +17,14 @@
     'BlurAdmin.pages.maps',
     'BlurAdmin.pages.profile',
 	'BlurAdmin.pages.ulang',
+	'BlurAdmin.pages.ulangconfig',
+	'BlurAdmin.pages.login',
   ])
       .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($urlRouterProvider, baSidebarServiceProvider) {
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/ulang');
 
     baSidebarServiceProvider.addStaticItem({
       title: 'Pages',

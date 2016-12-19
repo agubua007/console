@@ -1,0 +1,44 @@
+<div class="stop-all">
+   <img src="../../../../assets/img/icons/ulang-logo.png" alt="">
+</div>
+<div class="disertaciones">
+    <button class="btn btn-disertacion-anterior" ng-disabled="previousDissertation.Disabled != ''" ng-click="clickPreviousDissertation()">
+        <i class="fa fa-angle-double-left "></i>
+        <div>
+            <a> <img class="img-avatar" src="{{previousDissertation.firstSpeaker.SImage}}" /> {{previousDissertation.firstSpeaker.Name}}</a><br />
+            <label id="inputName" style="cursor: pointer">
+                {{previousDissertation.Name}}
+            </label>
+        </div>
+    </button>
+    <button class="btn btn-disertacion-actual" ng-click="clickShowDisertations()">
+        <a style="color: #e86b1f;font-size: 16px;"> <img class="img-avatar" src="{{currentDissertation.firstSpeaker.SImage}}" /> {{currentDissertation.firstSpeaker.Name}}</a>
+        <label id="inputName" style="cursor: pointer">
+            {{currentDissertation.Name}}
+        </label>
+        <br>
+        <span class="desde">{{currentDissertation.SFrom}}</span>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{currentDissertation.PercentageCompleted}}" aria-valuemin="0" aria-valuemax="100" style="width:{{currentDissertation.PercentageCompleted}}%">
+
+            </div>
+        </div>
+        <span class="hasta">{{currentDissertation.STo}}</span>
+
+    </button>
+    <button class="btn btn-disertacion-siguiente" ng-disabled="nextDissertation.Disabled != ''" ng-click="clickNextDissertation()">
+        <i class="fa fa-angle-double-right "></i>
+        <div>
+            <a> <img class="img-avatar" src="{{nextDissertation.firstSpeaker.SImage}}" /> {{nextDissertation.firstSpeaker.Name}}</a><br />
+            <label id="inputName" style="cursor: pointer">
+                {{nextDissertation.Name}}
+            </label>
+        </div>
+
+    </button>
+</div>
+<div class="coffee-break">
+    <button class="btn btn-coffee">
+        <img src="assets/img/icons/coffee.svg" class="logo-coffee" alt="">
+    </button>
+</div>

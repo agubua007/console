@@ -1,0 +1,340 @@
+
+
+.overlay-modal {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    display: none;
+    
+}
+
+#modal-disertaciones {
+    /*display: none;*/
+    position: absolute;
+    z-index: 9999999;
+    top: 5%;
+    width: 80% !important;
+    left: 10% !important;
+    height: 80% !important;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+#modal-idiomas {
+    /*display: none;*/
+    position: absolute;
+    z-index: 9999999;
+    top: 10%;
+    width: 200px !important;
+    left: 40% !important;
+    height: auto !important;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+#modal-idiomas .modal-dialog, #modal-idiomas .modal-body, #modal-idiomas .modal-footer  {
+    width: 100%;
+    height: 100%;
+}
+
+#modal-disertaciones .modal-dialog, #modal-disertaciones .modal-body, #modal-disertaciones .modal-footer  {
+    width: 100%;
+    height: 100%;
+}
+
+
+  .form-group{
+    margin-bottom: 0px;
+  }
+  .profile-page .form-group div.text-label {
+      line-height: 34px;
+      font-size: 14px;
+      font-weight: 300;
+     
+  }
+  .profile-page .form-group div.text-label a {
+    display: inline-block;
+  }
+  .profile-page .form-group div.text-label a:hover {
+        color: #1e897d;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        
+  }
+ 
+.modal-body .panel {
+    box-shadow: none !important;
+}
+
+  .table.align-left > thead > tr > th:first-child {
+    text-align: left;
+  }
+
+  .table.align-left > tbody > tr > td:first-child {
+    text-align: left;
+  } 
+  .row-selected{
+    font-weight: bold;
+    background-color: #ddd;
+  }
+  h3.with-line{
+    padding-top: 0px;
+    border-bottom: none;
+  }
+
+  .btn-select{
+    height: 25px;
+    width: 24px;
+    padding: 3px;
+    border-radius: 35%;
+  }
+
+  .btn-selected{
+    height: 25px;
+    width: 24px;
+    padding: 3px;
+    border-radius: 35%;
+    background: #ddd !important;
+    border-color: #aaa !important;
+  }
+
+  img.img-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  img.img-flag{
+  }
+
+  .span-date{
+    display: inline-block;
+  }
+
+.disertaciones-top {
+    width: 100% ;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+    position: relative;
+    height: 70px;
+    background-color: #2a2a2a;
+}
+
+.stop-all {
+    width: 5%;
+    height: 100%;
+    background-color: #2a2a2a;
+    border: none;
+    margin: 0 !important;
+    float: left;
+    border-bottom: 1px solid #e86b1f;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.stop-all img{
+    width: 50px;
+    margin-top: 10px;
+}
+
+
+.stop-all button {
+    width: 100%;
+    height: 100%;
+    background-color: #35383f;
+    border: none;
+    border-radius: 0px;
+    font-size: 30px;
+    color: #f24040;
+}
+
+.disertaciones-top .disertaciones {
+    border-radius: 0px;
+    width: 90%;
+    margin: 0 !important;
+    height: 100%;
+    float: left;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.disertaciones-top .btn-disertacion-anterior {
+    border-radius: 0px;
+    background-color: #2a2a2a;
+    width: 20%;
+    margin: 0 !important;
+    height: 100%; 
+    float: left;
+    border-right: 1px solid black;
+    color: white;
+    border-bottom: 1px solid #e86b1f;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+}
+
+.disertaciones-top .btn-disertacion-anterior a{
+    opacity: 0.8;
+    color: white;
+    
+}
+
+.disertaciones-top .btn-disertacion-anterior:active{
+    box-shadow: none;
+}
+
+.disertaciones-top .btn-disertacion-anterior .fa {
+	    padding-top: 7%;
+    position: relative;
+    float: right;
+    font-size: 20px;
+}
+
+.disertaciones-top .btn-disertacion-actual {
+    border-radius: 0px;
+    background-color: #2a2a2a;
+    width: 60%;
+    margin: 0 !important;
+    height: 100%; 
+    float: left;
+    color: white;
+    border-bottom: 1px solid #e86b1f;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+}
+
+.disertaciones-top .btn-disertacion-actual a {
+    color: white;
+}
+
+.disertaciones-top .btn-disertacion-actual:active {
+    box-shadow: none;
+}
+
+.disertaciones-top .btn-disertacion-actual .desde {
+    width: 15%;
+    float: left;
+    text-align: right;
+    margin-top: 3px;
+    padding-right: 8px;
+}
+
+.disertaciones-top .btn-disertacion-actual .hasta {
+    width: 15%;
+    float: left;
+    text-align: left;
+    margin-top: 2px;
+    padding-left: 8px;
+}
+
+.progress {
+    width: 70% !important;
+    height: 7px;
+    margin: 0 !important;
+    float: left;
+    margin-top: 10px !important; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.progress-bar {
+    background-color: #e86b1f;
+}
+
+.disertaciones-top .btn-disertacion-siguiente {
+    border-radius: 0px;
+    background-color: #2a2a2a;
+    width: 20%;
+    margin: 0 !important;
+    height: 100%; 
+    float: left;
+    border-left: 1px solid black;
+    color: white;
+    border-bottom: 1px solid #e86b1f;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+}
+
+.disertaciones-top .btn-disertacion-siguiente:active {
+    box-shadow: none;
+}
+
+.disertaciones-top .btn-disertacion-siguiente a{
+    color: white;
+    opacity: 0.8
+}
+
+.disertaciones-top .btn-disertacion-siguiente .fa {
+	padding-top: 7%;
+    position: relative;
+    float: left;
+    font-size: 20px;
+}
+.coffee-break {
+    width: 5%;
+    height: 100%;
+    background-color: #2a2a2a;
+    border: none;
+    position: relative;
+    margin: 0 !important;
+    float: left;
+    color: white;
+    border-bottom: 1px solid #e86b1f;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+}
+
+.coffee-break:active {
+    box-shadow: none;
+}
+
+.coffee-break button {
+    width: 100%;
+    height: 100%;
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 0px;
+    margin: 0 !important;
+}
+
+.disertaciones-top .btn-disertaciones a {
+    color: #e86b1f;
+}
+
+.disertaciones-top .btn-disertaciones label {
+    cursor: pointer;
+}
+
+.disertaciones-top .btn-disertaciones #inputFromTo {
+    color: #133f7c;
+}
+
+
+
+
+
+.coffee-break .btn-coffee img{
+    position: relative;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

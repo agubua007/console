@@ -285,10 +285,6 @@ a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease; }
 
-.btn:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2); }
-
 .open > .btn.dropdown-toggle.btn.btn-primary {
   background: #209e91;
   border-color: #088679;
@@ -1197,11 +1193,9 @@ body {
 
 .auth-main {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100%;

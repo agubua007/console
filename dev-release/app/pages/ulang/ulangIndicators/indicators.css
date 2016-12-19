@@ -1,0 +1,186 @@
+
+.pie-chart-item-container {
+    width: 100% !important;
+    box-shadow: none;
+    height: 90px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.pie-chart-item-container > div {
+    height: 100% !important;
+}
+
+.pie-chart-item-container > div > .panel {
+    height: 100% !important;
+}
+
+.pie-chart-item-container .panel {
+    width: 100% !important;
+    box-shadow: none;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pie-chart-item-container .panel:hover .panel-body {
+    margin-left: -8px;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.pie-chart-item-container .panel .panel-body {
+    padding: 0 ;
+    background-color: #f7f7f7;
+    margin-right: -10px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.pie-chart-item-container .panel .panel-body .pie-chart-item {
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.pie-chart-item-container .panel .panel-body .pie-chart-item .fa2{
+    position: absolute;
+    font-size: 80px;
+    right: 35px;
+    top: 3px;
+    color: #47484b;
+}
+
+.pie-chart-item-container .panel .panel-body .pie-chart-item .alarm{
+    position: absolute;
+    font-size: 110px;
+    right: 85px;
+    top: -15px;
+    
+}
+
+.pie-chart-item-container .panel-body .pie-chart-item .description {
+    font-size: 15px;
+    color: #35383f;
+    height: 100%;
+    width: 65%;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.pie-chart-item-container .panel-body .pie-chart-item .description-stats {
+    font-size: 20px;
+    color: #e86b1f;
+    font-weight: 300;
+    margin-top: 10px
+}
+
+.pie-chart-item-container .panel-body .pie-chart-item .description2-stats {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px
+}
+
+.pie-chart-item-container .panel-body .pie-chart-item .chart {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.pie-chart-item-container .panel-body .pie-chart-item .chart .description{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    z-index: 10;
+}
+
+.pie-chart-item-container .panel-body .pie-chart-item .chart .percent{
+    color: #5d5d5d;
+    position: absolute;
+    left: calc(100% - 75px);
+    top: 0px;
+    font-size: 13px;
+}
+
+.pie-chart-item-container .panel-body .pie-chart-item .chart canvas{
+    position: absolute!important;
+    top: 6px !important;
+    left: calc(100% - 100px) !important;
+    height: 70px !important;
+    width: 70px !important;
+    z-index: 1;
+}
+
+.pie-chart-item-container .panel-body .pie-chart-item .chart-icon {
+    position: absolute !important;
+    left: 0 !important;
+    
+}
+
+.pie-chart-item-container .panel .panel-body .pie-chart-item .iconos-estado{
+    background-color: antiquewhite !important;
+}
+
+.pie-chart-item .description .description-stats i{
+    font-size: 20px !important;
+    margin-top: 10px
+}
+
+.pie-chart-item .description .description2-stats i{
+    font-size: 20px !important;
+    margin-top: 10px
+}
+
+.oculto {
+    display: none !important;
+}
+
+.indicator-danger {
+    border-radius: 10px;
+    animation: blinker_indicator 1s linear infinite;
+}
+
+.indicator-danger i, .indicator-danger .description, .indicator-danger .description-stats{
+    animation: blinker_text_white 1s linear infinite;
+}
+
+
+ @keyframes blinker_indicator {
+	    50% { 
+            background-color: rgba(226, 27, 27, 0.8);
+        }
+	}
+
+@keyframes blinker_text_white {
+	    50% { 
+            color: white
+        }
+	}
+
+.btn-setup-circle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #efefef;
+    border-radius: 50%;
+    background-color: #35383f;
+    color: #efefef;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
