@@ -54,7 +54,7 @@
         });
        
        $scope.config = function () {
-         document.location.href = '../#!/ulangconfig';  
+         document.location.href = '/#/ulangconfig';  
        };
 	}
 })();

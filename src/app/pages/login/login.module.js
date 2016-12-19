@@ -34,7 +34,7 @@
 			/*if (!validateForm($('form')[0])) {
 				return;
 			}*/
-            document.location.href = '../#!/ulangsystem';
+            document.location.href = '/#/ulangsystem';
             /*
 			authService.login($scope.loginData).then(function (response) {
 				document.location.href = '../#!/ulangsystem';
