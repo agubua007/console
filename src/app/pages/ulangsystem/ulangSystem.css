@@ -1,0 +1,123 @@
+
+        body {
+            background-color: #35383f !important;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .logo-system {
+            width: 240px;
+        }
+
+
+       .box {
+           width: 80%;
+           max-width: 800px;
+           background-color: #ffffff;
+           margin: 0 auto;
+           height: 600px;
+           border-radius: 10px;
+           box-shadow: 0px 10px 15px rgba(0,0,0,0.6);
+           padding-top: 20px;
+       }
+       
+       .col-1 {
+           height: 38%;
+           width: 40%;
+           float: left;
+           padding-right: 1%;
+           text-align: right;
+           margin: 0;
+       }
+
+       .col-2 {
+           float: left;
+           height: 38%;
+           width: 58%;
+           padding-left:1%;
+           text-align: left;
+           margin: 0;
+       }
+       
+       .col-1 .fila, .col-2 .fila {
+           height: 30px;
+           line-height: 30px;
+       }
+       
+       .fila select {
+           width: 200px;
+       }
+       
+       .fila input[type="text"]{
+           width: 200px;
+           border-radius: 10px;
+           border: 1px solid #dbdbdb;
+           height: 16px;
+           text-decoration: none;
+       }
+       
+       .fila-op-2, .fila-op-3, .fila-op-4, .fila-op-5 {
+           display: none;
+       }
+
+.fila-firewall{
+    position: relative;
+    left: 58%;
+    top: 38%;
+}
+
+.fila-abajo {
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+    
+}
+
+.fila-abajo textarea {
+    width: 100%;
+    resize: none;
+    overflow-y: scroll;
+    border-radius: 6px;
+    border: 1px solid #bfbfbf;
+}
+
+.fila-abajo button{
+    height: 36px;
+    color: ghostwhite;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0);
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.fila-abajo .ok {
+    background-color: #62B01E;
+    padding: 5px 15px 5px 15px;
+}
+
+.fila-abajo .cancel {
+    background-color: #c94242;
+    padding: 5px 15px 5px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
