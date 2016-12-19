@@ -34,8 +34,10 @@
 			/*if (!validateForm($('form')[0])) {
 				return;
 			}*/
+            document.location.href = '../#!/ulangsystem';
+            /*
 			authService.login($scope.loginData).then(function (response) {
-				document.location.href = '/#/ulang';
+				document.location.href = '../#!/ulangsystem';
 				
 				//document.location.href = 'http://localhost:65501/api/Dashboard/GetConfiguration';
 
@@ -46,6 +48,7 @@
 					//showMessage($filter('translate')(err.error_description), "Error", "error");
 				}
 			});
+            */
 		};
 	}
 })();
