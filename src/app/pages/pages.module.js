@@ -19,6 +19,7 @@
 	'BlurAdmin.pages.ulang',
 	'BlurAdmin.pages.ulangconfig',
 	'BlurAdmin.pages.login',
+    'BlurAdmin.pages.ulangsystem'
   ])
       .config(routeConfig);
 
