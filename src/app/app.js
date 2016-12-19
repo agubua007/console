@@ -6,6 +6,7 @@ var app = angular.module('BlurAdmin', [
   'ui.sortable',
   'ui.router',
   'ngTouch',
+  'ngRoute',
   'toastr',
   'smart-table',
   'ui.footable',
@@ -58,6 +59,14 @@ app.config( [
     }
 ]);
 
+
+/*
+app.config(function($routeProvider, $locationProvider) {
+	// use the HTML5 History API
+	$locationProvider.html5Mode(true);
+});
+
 app.config(['$qProvider', function ($qProvider) {
     $qProvider.errorOnUnhandledRejections(false);
 }]);
+*/
