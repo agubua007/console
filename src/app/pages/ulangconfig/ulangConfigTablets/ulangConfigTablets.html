@@ -1,40 +1,14 @@
-
- <!-- Modal idiomas ------------------------->
- 
-  <div id="modal-idiomas">
-    <div class="modal-dialog">
-       <div class="modal-content">
-            <div class="modal-body"> 
-                <div><button class="btn btn-idioma-modal"><img src="/assets/img/flags/Spain.png" class="idioma" /> Español</button></div> 
-                <br>
-                <div><button class="btn btn-idioma-modal"><img src="/assets/img/flags/United-States.png" class="idioma" /> English</button></div>
-                <br>
-                <div><button class="btn btn-idioma-modal"><img src="/assets/img/flags/France.png" class="idioma" /> English</button></div>
-                <br>
-                <div><button class="btn btn-idioma-modal"><img src="/assets/img/flags/Italy.png" class="idioma" /> English</button></div>
-                <br>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" onclick="ocultarVentana('modal-idiomas')" >Cancel</button>
-                <button type="button" class="btn btn-success" onclick="ocultarVentana('modal-idiomas')">Ok</button>
-            </div>
-        </div>
-    </div>
-  </div>
-  
-  <!------------------------------------------>
-
  <div class="widgets">
   <div class="row">
         <div class="col-lg-12 col-md-12">
           <div ba-panel ba-panel-title="Tablets (Live)" ba-panel-class="with-scroll table-panel">
             <table class="table table-tablets" id="tabla-de-tablets" >
               <tr>
-                <th style="width: 16%; text-align: center">#</th>
-                <th style="width: 20%; text-align: left">Languages</th>
-                <th style="width: 40%">Switch / Preview <span style="float: right; margin-right: 40px">Mic Actions</span></th>
-                <th style="width: 20%; text-align: center">State</th>
-                <th style="width: 4%; text-align: center"></th>
+                <th style="width: 12%; text-align: center">#</th>
+                <th style="width: 30%; text-align: left; padding-left: 30px">Languages</th>
+                <th style="width: 36%;"><span style="margin-left: 30px">Switch / Preview </span><span style="float: right; margin-right: 10px">Mic Actions</span></th>
+                <th style="width: 20%; text-align: center;">State</th>
+                <th style="width: 2%; text-align: center"></th>
               </tr>
               <tr class="par-1 tablet-enabled">
                 <td class="columna-numero">
@@ -50,67 +24,215 @@
 
                 <td class="columna-language" title="English speaking and listening in Spanish">
                 <div class="indicator">
-                    <i class="fa fa-headphones fa-2" aria-hidden="true" ></i>
-                    <button class="btn btn-xs btn-idioma" onclick="mostrarVentana('modal-idiomas')">
-                        <img src="/assets/img/flags/Spain.png" class="idioma" />
-                    </button>
+                    <i class="fa fa-headphones fa-2 iconitos-idiomas" aria-hidden="true" ></i>
+                    <select name="" id="" class="select-idiomas">
+                        <option value="esp">
+                            <img src="/assets/img/flags/Spain.png" alt="">
+                            Español
+                        </option>
+                        <option value="eng">
+                            <img src="/assets/img/flags/United-States.png" alt="">
+                            English
+                        </option>
+                        <option value="ita">
+                            <img src="/assets/img/flags/Italy.png" alt="">
+                            Italian
+                        </option>
+                        <option value="fre">
+                            <img src="/assets/img/flags/France.png" alt="">
+                            French
+                        </option>
+                        <option value="por">
+                            <img src="/assets/img/flags/Portugal.png" alt="">
+                            Portuguese
+                        </option>
+                    </select>
                 </div>
 
                 <div class="indicator">
-                    <button class="btn btn-xs btn-idioma" onclick="mostrarVentana('modal-idiomas')">
-                    <img src="/assets/img/flags/United-States.png" class="idioma"/>
-                    </button>
-                    <i class="fa fa-microphone fa-2" aria-hidden="true"></i>
+                    <select name="" id="" class="select-idiomas">
+                        <option value="esp">
+                            <img src="/assets/img/flags/Spain.png" alt="">
+                            Español
+                        </option>
+                        <option value="eng">
+                            <img src="/assets/img/flags/United-States.png" alt="">
+                            English
+                        </option>
+                        <option value="ita">
+                            <img src="/assets/img/flags/Italy.png" alt="">
+                            Italian
+                        </option>
+                        <option value="fre">
+                            <img src="/assets/img/flags/France.png" alt="">
+                            French
+                        </option>
+                        <option value="por">
+                            <img src="/assets/img/flags/Portugal.png" alt="">
+                            Portuguese
+                        </option>
+                    </select>
+                    <i class="fa fa-microphone fa-2 iconitos-idiomas" aria-hidden="true"></i>
                 </div>
                 </td>
 
                 <td class="columna-actions">
-
-                    <div class="indicator switch">
-                        <button class="btn btn-xs btn-state btn-switch ">
-                            <i class="fa fa-random" aria-hidden="true"></i>
-                            Switch
-                        </button>
+                   <div class="indicator switch">
+                       <span class="tooltip2 tooltip-effect-2">
+                            <span class="tooltip-item">
+                                <button class="btn btn-xs btn-state btn-switch ">
+                                    <i class="fa fa-random" aria-hidden="true"></i>
+                                   
+                                </button>
+                            </span>
+                            <span class="tooltip-content clearfix">
+                                <span class="tooltip-img">
+                                    <i class="fa fa-random"></i>
+                                </span>
+                                <span class="tooltip-text">
+                                    Switch
+                                </span>
+                            </span>
+                        </span>
                     </div>
-
+                    
                     <div class="indicator">
-                        <button class="btn btn-xs btn-success btn-state">
-                            <i class="fa fa-television" aria-hidden="true"></i>
-                        </button>
-                        <button class="btn btn-xs btn-info btn-state">
-                            <i class="fa fa-headphones" aria-hidden="true"></i>
-                        </button>
-                        <button class="btn btn-xs btn-info btn-state">
-                            <i class="fa fa-music" aria-hidden="true"> Audio test</i>
-                        </button>
+                       <span class="tooltip2 tooltip-effect-2">
+                            <span class="tooltip-item">
+                                <button class="btn btn-xs btn-success btn-state">
+                                    <i class="fa fa-television" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                            <span class="tooltip-content clearfix">
+                                <span class="tooltip-img">
+                                    <i class="fa fa-television"></i>
+                                </span>
+                                <span class="tooltip-text">
+                                    Preview
+                                </span>
+                            </span>
+                        </span>
+                        <span class="tooltip2 tooltip-effect-2">
+                            <span class="tooltip-item">
+                                <button class="btn btn-xs btn-info btn-state">
+                                    <i class="fa fa-headphones" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                            <span class="tooltip-content clearfix">
+                                <span class="tooltip-img">
+                                    <i class="fa fa-headphones"></i>
+                                </span>
+                                <span class="tooltip-text">
+                                    Listen
+                                </span>
+                            </span>
+                        </span>
+                        <span class="tooltip2 tooltip-effect-2">
+                            <span class="tooltip-item">
+                                <button class="btn btn-xs btn-info btn-state">
+                                    <i class="fa fa-music" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                            <span class="tooltip-content clearfix">
+                                <span class="tooltip-img">
+                                    <i class="fa fa-music"></i>
+                                </span>
+                                <span class="tooltip-text">
+                                    Audio test
+                                </span>
+                            </span>
+                        </span>
                     </div>
 
                     <div class="indicator ganancia" title="gain control">
-                            <img src="/assets/img/icons/mic-gain.svg" width="35px" alt="">
-                            <button class="btn btn-xs ">
-                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            <span class="tooltip2 tooltip-effect-2">
+                                <span class="tooltip-item">
+                                    <img src="/assets/img/icons/mic-gain.svg" width="35px" alt="">
+                                </span>
+                                <span class="tooltip-content clearfix">
+                                    <span class="tooltip-img">
+                                        <img src="/assets/img/icons/mic-gain-white.svg" width="35px" alt="">
+                                    </span>
+                                    <span class="tooltip-text">
+                                        <button class="btn btn-xs ">
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
 
-                            </button>
-                            5
-                            <button class="btn btn-xs ">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </button>
+                                        </button>
+                                        5
+                                        <button class="btn btn-xs ">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </span>
+                                </span>
+                            </span>
                     </div>
                     
                 </td>
+                
                 <td class="indicators columna-indicadores" >
-                    <div class="indicator" title="battery level (10%)">
-                        <img src="/assets/img/icons/battery-2.svg" width="20px"  alt="">
-                    </div>
-                    <div class="indicator" title="wifi level (98%)">
-                        <img src="/assets/img/icons/wifi.svg" width="20px"  alt="">
-                    </div>
-                    <div class="indicator oculto" title="square wave">
-                        <i class="fa fa-line-chart " aria-hidden="true"></i>
-                    </div>
-                    <div class="indicator oculto" title="loss packets">
-                        <img src="/assets/img/icons/box.svg" width="20px"  alt="">
-                    </div>
+                   <span class="tooltip2 tooltip-effect-2">
+                        <span class="tooltip-item">
+                            <div class="indicator">
+                                <img src="/assets/img/icons/battery-2.svg" width="15px"  alt="">
+                            </div>
+                        </span>
+                        <span class="tooltip-content clearfix">
+                            <span class="tooltip-img">
+                                <img src="/assets/img/icons/battery-white-2.svg" width="20px" alt="">
+                            </span>
+                            <span class="tooltip-text">
+                                Battery: 80%
+                            </span>
+                        </span>
+                    </span>
+                    
+                    <span class="tooltip2 tooltip-effect-2">
+                        <span class="tooltip-item">
+                            <div class="indicator" >
+                                <img src="/assets/img/icons/wifi-4.svg" width="15px"  alt="">
+                            </div>
+                        </span>
+                        <span class="tooltip-content clearfix">
+                            <span class="tooltip-img">
+                                <img src="/assets/img/icons/wifi-white-4.svg" width="20px" alt="">
+                            </span>
+                            <span class="tooltip-text">
+                                Wifi: 100%
+                            </span>
+                        </span>
+                    </span>
+                    
+                    <span class="tooltip2 tooltip-effect-2">
+                        <span class="tooltip-item">
+                            <div class="indicator">
+                                <img src="/assets/img/icons/box.png" width="15px"  alt="">
+                            </div>
+                        </span>
+                        <span class="tooltip-content clearfix">
+                            <span class="tooltip-img">
+                                <img src="/assets/img/icons/box-white.png" width="20px" alt="">
+                            </span>
+                            <span class="tooltip-text">
+                                Loss packages!
+                            </span>
+                        </span>
+                    </span>
+                    
+                    <span class="tooltip2 tooltip-effect-2" >
+                        <span class="tooltip-item">
+                            <div class="indicator">
+                                <img src="/assets/img/icons/audio-wave.svg" width="15px"  alt="">
+                            </div>
+                        </span>
+                        <span class="tooltip-content clearfix">
+                            <span class="tooltip-img">
+                                <img src="/assets/img/icons/audio-wave-white.svg" width="20px" alt="">
+                            </span>
+                            <span class="tooltip-text">
+                                Square wave
+                            </span>
+                        </span>
+                    </span>
                 </td>
                 <td class="columna-alarma">
                     <i class="fa fa-exclamation-circle iconTablets blink_me" style="color: red;" aria-hidden="true"></i>
@@ -121,9 +243,6 @@
           </div>
         </div>
     </div>
-    <center>
-        <button class="btn btn-agregar-tablet" onclick="agregarTablet()"><i class="fa fa-plus"></i></button>
-    </center>
 <!--
   <div class="row">
     <div class="col-lg-12 col-md-12">
@@ -312,13 +431,6 @@
     </div>
   </div>
   -->
-  
-  <script>
-    function mostrarIdiomas () {
-        alert("dssfdsf d fsd");
-    }
-    
-    </script>
 </div>
 
 

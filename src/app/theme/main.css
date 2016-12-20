@@ -42,10 +42,11 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden !important;
+    text-align: center;
   }
 
   #svg-preloader {
-    margin: auto;
+      left: calc(50% - 50px);
       position: absolute;
       top: 40%;
   }
@@ -55,10 +56,12 @@ body {
 
     .texto-ulang {
         position: absolute;
-        top: 40%;
+        top: 38%;
         width: 100px !important;
+        left: calc(50% - 60px);
     }
 
 .texto-ulang img{
-    width: 60px;
+    width: 100px;
+    left: calc(50% - 50px);
 }

@@ -176,13 +176,9 @@
     color: white;
     border-bottom: 1px solid #e86b1f;
     box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+    opacity: 1;
 }
 
-.disertaciones-top .btn-disertacion-anterior a{
-    opacity: 0.8;
-    color: white;
-    
-}
 
 .disertaciones-top .btn-disertacion-anterior:active{
     box-shadow: none;
@@ -255,6 +251,7 @@
     color: white;
     border-bottom: 1px solid #e86b1f;
     box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+    opacity: 1;
 }
 
 .disertaciones-top .btn-disertacion-siguiente:active {
@@ -263,7 +260,7 @@
 
 .disertaciones-top .btn-disertacion-siguiente a{
     color: white;
-    opacity: 0.8
+    opacity: 1
 }
 
 .disertaciones-top .btn-disertacion-siguiente .fa {

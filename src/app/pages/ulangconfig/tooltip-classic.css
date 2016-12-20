@@ -1,0 +1,201 @@
+.tooltip2 {
+	display: inline;
+	position: relative;
+	z-index: 99999999;
+    margin: 0 !important;
+}
+
+/* Trigger text */
+
+.tooltip-item {
+	
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 300;
+	padding: 0;
+}
+
+/* Gap filler */
+
+.tooltip-item::after {
+	content: '';
+	position: absolute;
+	width: 160px;
+	height: 60px;
+	bottom: 100%;
+	left: 50%;
+	pointer-events: none;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.tooltip2:hover .tooltip-item::after {
+	pointer-events: auto;
+}
+
+/* Tooltip */
+
+.tooltip-content {
+	position: absolute;
+	z-index: 9999;
+	width: 160px;
+	left: 50%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+	margin: 0 0 20px -80px;
+	bottom: 100%;
+	text-align: left;
+	font-size: 1em;
+	line-height: 1;
+	box-shadow: -5px -5px 15px rgba(48,54,61,0.2);
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+    background: transparent;
+    border-radius: 6px;
+}
+
+.tooltip-effect-1 .tooltip-content {
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-2 .tooltip-content {
+	-webkit-transform-origin: 50% calc(100% + 10px);
+	transform-origin: 50% calc(100% + 10px);
+	-webkit-transform: perspective(1000px) rotate3d(1,0,0,45deg);
+	transform: perspective(1000px) rotate3d(1,0,0,45deg);
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+.tooltip-effect-3 .tooltip-content {
+	-webkit-transform: translate3d(0,10px,0) rotate3d(1,1,0,25deg);
+	transform: translate3d(0,10px,0) rotate3d(1,1,0,25deg);
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-4 .tooltip-content {
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transform: scale3d(0.7,0.3,1);
+	transform: scale3d(0.7,0.3,1);
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+.tooltip-effect-5 .tooltip-content {
+	width: 80px;
+	margin-left: -40px;
+	-webkit-transform-origin: 50% calc(100% + 6em);
+	transform-origin: 50% calc(100% + 6em);
+	-webkit-transform: rotate3d(0,0,1,15deg);
+	transform: rotate3d(0,0,1,15deg);
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+	-webkit-transition-timing-function: ease, cubic-bezier(.17,.67,.4,1.39);
+	transition-timing-function: ease, cubic-bezier(.17,.67,.4,1.39);
+}
+
+.tooltip2:hover .tooltip-content {
+	pointer-events: auto;
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+	transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+}
+
+.tooltip2.tooltip-effect-2:hover .tooltip-content {
+	-webkit-transform: perspective(1000px) rotate3d(1,0,0,0deg);
+	transform: perspective(1000px) rotate3d(1,0,0,0deg);
+}
+
+/* Arrow */
+
+.tooltip-content::after {
+	content: '';
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: transparent;
+	border-top-color: #2a3035;
+	border-width: 2px;
+	margin-left: -5px;
+}
+
+/* Tooltip content*/
+
+.tooltip-content .tooltip-img img {
+	position: relative;
+	height: 40px;
+    width: 40px;
+	display: block;
+    margin: 0;
+}
+
+.tooltip-img {
+    float: left;
+    background-color: #e86b1f;
+    height: 100%;
+    width: 30%;
+    border-radius: 6px 0px 0px 6px !important;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 0;
+    padding-left: 4px;
+}
+.tooltip-text {
+	font-size: 0.98em;
+	line-height: 40px;
+	display: block;
+	color: #fff;
+    background-color: #35383f;
+    float: left;
+    width: 70%;
+    height: 100%;
+    border-radius: 0px 6px 6px 0px;
+    padding-left: 8px;
+}
+
+.ganancia {
+    background-color: transparent;
+    margin: 1px;
+    float: right;
+    border-radius: 40px;
+    line-height: 30px;
+    padding-right: 10px;
+    padding-left: 2px;
+}
+
+.tooltip-text button {
+    background-color: transparent;
+    border: 1px solid #b5b5b5;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tooltip-text a {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

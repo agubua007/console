@@ -64,8 +64,12 @@
 
 }
 
-.table-tablets .tablet-disabled, .table-tablets .tablet-enabled {
-    
+.table-tablets .select-idiomas {
+    width: 80px;
+}
+
+.table-tablets .iconitos-idiomas {
+    margin: -15px 2px 3px 2px;; 
 }
 
 .table-tablets tr{
@@ -120,7 +124,8 @@
     background-color: transparent;
     border: 1px solid #a3a3a3;
     color: #333;
-    margin-right: 10px;
+    margin-right: 5px;
+    width: 40px;
 }
 
 .indicator .btn-info {
@@ -157,14 +162,8 @@
 
 .ganancia {
     background-color: transparent;
-    margin: 1px;
     float: right;
-    border-radius: 40px;
     line-height: 30px;
-    padding-right: 10px;
-    padding-left: 2px;
-    border: 1px solid #2e6fb1;
-    border-style: groove;
 }
 
 .ganancia button {
